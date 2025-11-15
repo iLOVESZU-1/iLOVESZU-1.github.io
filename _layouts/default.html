@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <ul class="nav-links">
+            <li><a href="{{ '/' | relative_url }}">=== 首页 ===</a></li>
+            <li><a href="{{ '/blog' | relative_url }}">=== 日志 ===</a></li>
+            <li><a href="{{ '/about' | relative_url }}">=== 关于 ===</a></li>
+        </ul>
+    </div>
+
+    <!-- 星空主题区域 -->
+    <div class="starfield" id="starfield">
+        <div class="stars" id="stars"></div>
+        <div class="constellation" id="constellation"></div>
+    </div>
+
+    <!-- 主要内容 -->
+    <div class="container">
+        {{ content }}
+    </div>
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
