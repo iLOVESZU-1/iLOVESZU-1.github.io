@@ -1,0 +1,69 @@
+# Gemfile
+source "https://rubygems.org"
+
+# Jekyll
+gem "jekyll", "~> 4.3.0"
+
+# GitHub Pages (可选，如果你计划在 GitHub Pages 上部署)
+gem "github-pages", group: :jekyll_plugins
+
+# 用于分页的插件
+gem "jekyll-paginate"
+
+# 用于生成 RSS 订阅的插件
+gem "jekyll-feed"
+
+# 用于优化 CSS 的插件
+gem "jekyll-sass-converter"
+
+# 用于优化图片的插件（可选）
+gem "jekyll-picture-tag"
+
+# 用于生成站点地图的插件
+gem "jekyll-sitemap"
+
+# 用于优化 SEO 的插件
+gem "jekyll-seo-tag"
+
+# 用于处理日期的插件
+gem "jekyll-timeago"
+
+# 用于压缩 HTML 的插件
+gem "jekyll-compress-html"
+
+# 用于处理相对链接的插件
+gem "jekyll-redirect-from"
+
+# 用于处理链接的插件
+gem "jekyll-mentions"
+
+# 用于处理图片的插件
+gem "jekyll-avatar"
+
+# 用于生成搜索索引的插件
+gem "jekyll-gist"
+
+# 用于处理数据文件的插件
+gem "jekyll-data"
+
+# 用于处理增量构建的插件
+gem "jekyll-watch"
+
+# 用于处理文件处理的插件
+gem "listen"
+
+# 开发和测试依赖
+group :jekyll_plugins do
+  gem "jekyll-include-cache"
+end
+
+# Windows 平台兼容性
+if Gem.win_platform?
+  gem "tzinfo"
+  gem "tzinfo-data"
+end
+
+# 用于构建站点的依赖
+group :development do
+  gem "webrick"
+end
