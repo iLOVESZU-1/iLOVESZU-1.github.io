@@ -1,0 +1,21 @@
+# _config.yml
+title: Kepvisha's Blog
+email: 1036305676@qq.com
+description: >-
+  Kepvisha的个人博客，探索MCPK、数学、计算机科学和旅行的世界
+baseurl: ""
+url: "https://iLOVESZU-1.github.io"
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby
