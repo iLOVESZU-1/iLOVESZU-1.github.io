@@ -1,0 +1,33 @@
+---
+layout: default
+title: 首页
+---
+
+<div class="page-content">
+    <h1 class="page-title">=== 欢迎来到我的宇宙 ===</h1>
+    
+    <div class="terminal-header">
+        <div class="terminal-border">
+            <div class="terminal-title">Kepvisha's Personal Blog</div>
+            <div class="terminal-status">System Online • Connected to Stars</div>
+        </div>
+    </div>
+    
+    <p class="welcome-text">
+        在这片由<span class="highlight">代码编织的星空</span>中，每一个字节都闪烁着思想的光芒。<br>
+        当<span class="highlight">数学的公式</span>化作旋律，当<span class="highlight">计算机的逻辑</span>绘成画卷，<br>
+        我们便听见了<span class="highlight">宇宙深处的回响</span>。
+    </p>
+    
+    <!-- 最新三条博客 -->
+    <h2>=== 最新日志 ===</h2>
+    {% for post in site.posts limit:3 %}
+    <div class="blog-card">
+        <h3 class="blog-title">>>> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <div class="blog-date">>>> {{ post.date | date: "%Y-%m-%d" }}</div>
+        <p class="blog-excerpt">>>> {{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </div>
+    {% else %}
+    <p>>>> 暂无日志... 系统正在初始化...</p>
+    {% endfor %}
+</div>
