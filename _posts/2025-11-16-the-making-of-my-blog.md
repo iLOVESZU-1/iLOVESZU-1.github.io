@@ -22,4 +22,4 @@ categories: meta journal
 
 有点强。
 
-![OK啦 哪次不OK]({{ '/assets/images/QQ_1763301024539.png' | relative_url }})
+![OK啦 哪次不OK]({{ '/assets/QQ_1763301024539.png' | relative_url }})
