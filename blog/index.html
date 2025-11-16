@@ -9,34 +9,20 @@ title: 日志
     <div class="terminal-header">
         <div class="terminal-border">
             <div class="terminal-title">Blog Directory</div>
-            <div class="terminal-status">Total Entries: {{ paginator.total_posts }} • Sort: Date Descending</div>
+            <div class="terminal-status">Total Entries: {{ site.posts.size }} • Sort: Date Descending</div>
         </div>
     </div>
     
     <div id="blog-list">
-        {% for post in paginator.posts %}
+        {% for post in site.posts %}
         <div class="blog-card">
             <h3 class="blog-title">>>> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
             <div class="blog-date">>>> {{ post.date | date: "%Y-%m-%d" }}</div>
             <p class="blog-excerpt">>>> {{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         </div>
+        {% else %}
+        <p>>>> 暂无日志... 系统正在初始化...</p>
         {% endfor %}
     </div>
-    
-    <!-- 分页 -->
-    <div class="pagination">
-        {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">[ 上一页 ]</a>
-        {% else %}
-            <span class="prev disabled">[ 上一页 ]</span>
-        {% endif %}
 
-        <span class="page-number">第 {{ paginator.page }} 页，共 {{ paginator.total_pages }} 页</span>
-
-        {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | relative_url }}" class="next">[ 下一页 ]</a>
-        {% else %}
-            <span class="next disabled">[ 下一页 ]</span>
-        {% endif %}
-    </div>
 </div>
