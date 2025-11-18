@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "欢迎来到我的新博客"
 date:   2024-01-01 12:00:00 +0000
 categories: jekyll update
