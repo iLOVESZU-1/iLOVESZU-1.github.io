@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "关于我个人博客的建设历程"
 date:   2025-11-16 13:50:36 +0000
 categories: meta journal
