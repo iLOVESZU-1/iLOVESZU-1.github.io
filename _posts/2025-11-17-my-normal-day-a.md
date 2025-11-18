@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "2025-11-17"
 date:   2025-11-17 23:15:00 +0800
 ---
