@@ -40,7 +40,7 @@ n行m列数据(整数）
 <details>
 <summary>点击我展开</summary>
 
-```c
+```
 #include <stdio.h>
 
 int main()
