@@ -9,7 +9,7 @@ date:   2025-11-17 23:15:00 +0800
 晚上学JVAV，太难了，语法有些太抽象，就算是照着AI生成的打最基础的也是一脸何意味，看不懂看不懂看不懂。我这个智商，什么时候能拿java写题？写程序？其实python和c++我也是一知半解，但是，我觉得敲java有意思，我就开始学了。
 
 学JAVA才是真正的挑战自己
-···
+'''
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -47,5 +47,5 @@ public class Main{
         }
         scanner.close();
     }
-···
 }
+'''
