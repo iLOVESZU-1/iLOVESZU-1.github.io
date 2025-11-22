@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "2025-11-22 MATHS + CODING ADVENTURE"
+date:   2025-11-17 23:15:00 +0800
+---
+
+今天上午高数期中，感觉还好，不是很难。
+
+晚上学JVAV，太难了，语法有些太抽象，就算是照着AI生成的打最基础的也是一脸何意味，看不懂看不懂看不懂。我这个智商，什么时候能拿java写题？写程序？其实python和c++我也是一知半解，但是，我觉得敲java有意思，我就开始学了。
+
+学JAVA才是真正的挑战自己
+···
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        ArrayList<String> tasks = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        while(true){
+            System.out.println("请输入命令（add/list/exit）");
+            String command = scanner.nextLine().trim(); //去掉首尾空格            if(command.equals("add")){
+                System.out.println("请输入任务内容：");
+                String task = scanner.nextLine().trim();
+                if(!task.isEmpty()){
+                    tasks.add(task);
+                    System.out.println("任务已添加！");
+                }else{
+                    System.out.println("任务内容不能为空。");
+                }
+            }else if(command.equals("list")){
+                if(tasks.isEmpty()){
+                    System.out.println("暂无任务。");
+                }else{
+                    System.out.println("当前任务列表");
+                    for(int i = 0;i < tasks.size();i++){
+                        System.out.println((i + 1) + ". " + tasks.get(i));
+                    }
+                }
+            }else if (command.equals("exit")){
+                System.out.println("再见！");
+                break;
+            }else{
+                System.out.println("未知命令，请输入add/list/exit。");
+            }
+        }
+        scanner.close();
+    }
+···
+}
