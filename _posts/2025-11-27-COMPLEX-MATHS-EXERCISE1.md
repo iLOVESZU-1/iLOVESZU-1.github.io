@@ -10,10 +10,10 @@ categories: [Maths]
 <img src="/assets/0be21a0023bd27b86c682053d833ba85.png" 
      alt="题目" 
      style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-<img src="/assets/9d926e2c4761d1a80c9c5dc276e012d9.jpg" 
+<img src="/assets/8d20279f49597f67d083177ffea26536.jpg" 
      alt="题目" 
      style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-<img src="/assets/8d20279f49597f67d083177ffea26536.jpg" 
+<img src="/assets/9d926e2c4761d1a80c9c5dc276e012d9.jpg" 
      alt="题目" 
      style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 <img src="/assets/05d577ebed904fe81ea726277d12f69a.jpg" 
