@@ -1,35 +1,45 @@
 ---
 layout: default
-title: Index
+title: 首页
 ---
 
-<section class="intro-quote">
-    "We are made of starstuff. We are a way for the cosmos to know itself."
-</section>
-
-<div class="audio-deck">
-    <!-- Music Player 1 -->
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=139774&auto=0&height=66"></iframe>
-</div>
-<div class="audio-deck" style="margin-top: -10px; border-top: none;">
-    <!-- Music Player 2 -->
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=441491828&auto=0&height=66"></iframe>
-</div>
-
-<div class="section-title">Latest Entries</div>
-
-<!-- Jekyll Loop to show latest 5 posts -->
-{% for post in site.posts limit:5 %}
-<article class="log-entry">
-    <span class="log-date">NO. {{ post.date | date: "%Y.%m.%d" }}</span>
-    <a href="{{ post.url | relative_url }}" class="log-title">{{ post.title }}</a>
-    <div class="log-snippet">
-        {{ post.excerpt | strip_html | truncatewords: 30 }}
+<div class="page-content">
+    <h1 class="page-title">=== 欢迎来到我的宇宙 ===</h1>
+    
+    <div class="terminal-header">
+        <div class="terminal-border">
+            <div class="terminal-title">Kepvisha's Personal Blog</div>
+            <div class="terminal-status">System Online • Connected to Stars</div>
+        </div>
     </div>
-</article>
-{% endfor %}
+    
+    <p class="welcome-text">
+        在这片由<span class="highlight">代码编织的星空</span>中，每一个字节都闪烁着思想的光芒。<br>
+        当<span class="highlight">数学的公式</span>化作旋律，当<span class="highlight">计算机的逻辑</span>绘成画卷，<br>
+        我们便听见了<span class="highlight">宇宙深处的回响</span>。
+    </p>
 
-<div class="section-title">Friend Links</div>
-<ul style="list-style: none; font-family: 'Space Mono', monospace; font-size: 0.8rem;">
-    <li><a href="#">>> 麦香包大神的博客！！！</a></li>
-</ul>
+    <!-- 网易云音乐外链播放器 (并排显示) -->
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 20px; margin-bottom: 20px;">
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=29307542&auto=1&height=66"></iframe>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28830336&auto=1&height=66"></iframe>
+    </div>
+    
+    <!-- 最新三条博客 -->
+    <h2>=== 最新日志 ===</h2>
+    {% for post in site.posts limit:3 %}
+    <div class="blog-card">
+        <h3 class="blog-title">>>> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <div class="blog-date">>>> {{ post.date | date: "%Y-%m-%d" }}</div>
+        <p class="blog-excerpt">>>> {{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </div>
+    {% else %}
+    <p>>>> 暂无日志... 系统正在初始化...</p>
+    {% endfor %}
+
+    <!-- 友情链接板块 -->
+    <h2>=== 友情链接 ===</h2>
+    <ul class="friend-links">
+        <li><a href="https://mxblacker.github.io/" target="_blank">麦香包大神の博客！！！</a></li>
+    </ul>
+</div>
