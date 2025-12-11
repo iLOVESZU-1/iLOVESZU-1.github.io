@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "C++ EP1：赦免战俘"
+title: "字符串题EP1"
 date: 2025-12-10 22:42:50 +0800
-categories: [C++, Algorithm]
+categories: [C, Algorithm]
 author: iLOVESZU-1
 ---
 
